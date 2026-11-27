@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: smart-e-mobility-hub
+    runtime: python
+    buildCommand: echo "No build step needed"
+    startCommand: python app.py --demo-af04
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.11"
+      - key: RENDER
+        value: "true"
